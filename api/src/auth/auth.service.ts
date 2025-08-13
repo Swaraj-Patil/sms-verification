@@ -75,7 +75,7 @@ export class AuthService {
       })
       this.mailService.sendEmailFromTemplate({
         to: user.email,
-        subject: 'Welcome to TextBee - Lets get started!',
+        subject: 'Welcome to VerifyOTP - Lets get started!',
         template: 'welcome-1',
         context: { name: user.name },
         from: 'vernu vernu@textbee.dev',

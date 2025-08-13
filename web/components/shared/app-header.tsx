@@ -153,16 +153,16 @@ export default function AppHeader() {
             href={Routes.landingPage}
           >
             <Image
-              src='/images/logo.png'
-              alt='textbee Logo'
+              src='/images/icon.svg'
+              alt='VerifyOTP Logo'
               width={24}
               height={24}
-              className='h-6 w-6 bg-white rounded-full'
+              className='ml-2 h-8 w-8 bg-white rounded-full'
             />
             <span className='font-bold'>
-              text<span className='text-primary'>bee</span>
+              Vyom<span className='text-primary'>ize</span>
               <span className='text-xs align-center text-gray-500 dark:text-gray-400'>
-                .dev
+                .com
               </span>
             </span>
           </Link>

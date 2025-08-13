@@ -35,11 +35,11 @@ export default function UpgradeToProAlert() {
       }
     } else if (monthlyUsagePercentage >= 80) {
       return {
-        bgColor: 'bg-gradient-to-r from-orange-500 to-red-500',
+        bgColor: 'bg-gradient-to-r from-primary to-primary/80',
         message: "⚠️ Approaching limit! Upgrade to Pro to avoid service interruption.",
         subMessage: `You've used ${monthlyUsagePercentage}% of your monthly SMS limit (${processedSmsLastMonth}/${monthlyLimit}).`,
         buttonText: "Upgrade Before Limit!",
-        buttonColor: 'bg-white text-orange-600 hover:bg-orange-50 hover:text-orange-700 border-orange-600',
+        buttonColor: 'bg-white text-primary hover:bg-primary/10 hover:text-primary/80 border-primary',
         urgency: 'warning'
       }
     } else {
@@ -107,7 +107,7 @@ export default function UpgradeToProAlert() {
               variant='outline'
               size='sm'
               asChild
-              className='bg-orange-500 text-white hover:bg-orange-600 text-xs md:text-sm'
+              className='bg-primary text-white hover:bg-primary/90 text-xs md:text-sm'
             >
               <Link href={'/#pricing'}>Learn More</Link>
             </Button>

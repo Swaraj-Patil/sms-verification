@@ -135,10 +135,10 @@ export default function DownloadPage() {
       <div className='container mx-auto max-w-5xl'>
         <div className='text-center mb-12'>
           <div className='inline-flex items-center rounded-full border px-3 py-1 text-sm bg-brand-50 dark:bg-brand-950 border-brand-200 dark:border-brand-800 text-brand-700 dark:text-brand-300 mb-4'>
-            <Download className='h-3.5 w-3.5 mr-2' /> Download TextBee
+            <Download className='h-3.5 w-3.5 mr-2' /> Download VerifyOTP
           </div>
           <h1 className='text-4xl font-bold tracking-tight text-gray-900 dark:text-white'>
-            Download TextBee App
+            Download VerifyOTP App
           </h1>
           <p className='mt-4 text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto'>
             Transform your Android device into a powerful SMS gateway with our
@@ -170,11 +170,11 @@ export default function DownloadPage() {
                     <Skeleton className='h-8 w-48' />
                   ) : error ? (
                     <h2 className='text-2xl font-bold text-gray-900 dark:text-white'>
-                      TextBee App
+                      VerifyOTP App
                     </h2>
                   ) : (
                     <h2 className='text-2xl font-bold text-gray-900 dark:text-white'>
-                      {latestRelease?.name || 'TextBee App'}
+                      {latestRelease?.name || 'VerifyOTP App'}
                     </h2>
                   )}
                 </div>

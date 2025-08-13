@@ -62,7 +62,7 @@ export default function GetStartedCard() {
             </div>
           </div>
           <CardDescription className="mt-2">
-            Complete these steps to start using TextBee SMS Gateway
+            Complete these steps to start using VerifyOTP SMS Gateway
           </CardDescription>
         </CardHeader>
         <CardContent className="pt-4">
@@ -72,9 +72,9 @@ export default function GetStartedCard() {
                 1
               </div>
               <div className="space-y-1">
-                <p className="font-medium">Download TextBee App</p>
+                <p className="font-medium">Download VerifyOTP App</p>
                 <p className="text-sm text-muted-foreground">
-                  Install the TextBee app on your Android device
+                  Install the VerifyOTP app on your Android device
                 </p>
                 <Button variant="outline" size="sm" className="mt-2" onClick={() => window.open('https://dl.textbee.dev', '_blank')}>
                   <Download className="mr-2 h-4 w-4" />

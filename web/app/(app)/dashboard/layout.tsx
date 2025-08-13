@@ -110,14 +110,14 @@ function NavItem({
       prefetch={true}
       className={`flex flex-col items-center p-2 rounded-md transition-colors w-20 ${
         isActive
-          ? 'border border-brand-500 dark:border-brand-400 bg-brand-100/20 dark:bg-brand-900/10 text-brand-600 dark:text-brand-400'
-          : 'text-gray-700 dark:text-gray-200 hover:bg-brand-100/20 dark:hover:bg-brand-900/10 hover:text-brand-600 dark:hover:text-brand-400'
+          ? 'border border-[#065dd6] dark:border-[#0854bf] bg-[#f7fbff] dark:bg-brand-900/10 text-[#065dd6] dark:text-[#0854bf]'
+          : 'text-gray-700 dark:text-gray-200 hover:bg-[#f7fbff] dark:hover:bg-brand-900/10 hover:text-[#065dd6] dark:hover:text-[#0854bf]'
       }`}
     >
       <span
         className={
           isActive
-            ? 'text-brand-600 dark:text-brand-400 mb-1'
+            ? 'text-[#065dd6] dark:text-[#0854bf] mb-1'
             : 'text-gray-600 dark:text-gray-300 mb-1'
         }
       >

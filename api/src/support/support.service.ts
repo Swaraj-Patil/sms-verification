@@ -58,7 +58,7 @@ export class SupportService {
           category: createSupportMessageDto.category,
           message: createSupportMessageDto.message,
           appLogoUrl:
-            process.env.APP_LOGO_URL || 'https://textbee.dev/logo.png',
+            process.env.APP_LOGO_URL || 'https://textbee.dev/logo.svg',
           currentYear: new Date().getFullYear(),
         },
       })
@@ -129,7 +129,7 @@ export class SupportService {
           email: user.email,
           message: createSupportMessageDto.message || 'No reason provided',
           appLogoUrl:
-            process.env.APP_LOGO_URL || 'https://textbee.dev/logo.png',
+            process.env.APP_LOGO_URL || 'https://textbee.dev/logo.svg',
           currentYear: new Date().getFullYear(),
         },
       })
