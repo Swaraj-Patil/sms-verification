@@ -57,7 +57,15 @@ async function bootstrap() {
     express.raw({ type: 'application/json' }),
   )
   app.useBodyParser('json', { limit: '2mb' });
-  app.enableCors()
+  app.enableCors({
+    origin: [
+      'http://localhost:3000',  // Alternative frontend dev
+      process.env.FRONTEND_URL, // Production frontend
+    ],
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'x-api-key'],
+    credentials: true,
+  })
   await app.listen(PORT)
 }
 bootstrap()
